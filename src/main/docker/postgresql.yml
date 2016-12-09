@@ -1,0 +1,12 @@
+version: '2'
+services:
+    blog2-postgresql:
+        container_name: blog2-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/blog2/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=blog2
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
